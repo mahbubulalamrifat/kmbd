@@ -323,14 +323,3 @@ ul li a.active {
 }
 
 /* @media (orientation: landscape){} */
-
-.carousel {
-	margin-top: 50px;
-}
-.carousel-inner {
-	height: 100px;
-}
-.carousel-caption {
-	color: #051643;
-	top: 50%;
-}
