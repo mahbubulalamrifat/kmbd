@@ -33,7 +33,6 @@ ul li a.active {
 }
 .social1 {
 	color: #1e73be;
-	
 }
 .navbar {
 	color: black;
@@ -64,11 +63,19 @@ ul li a.active {
 	height: 10px;
 	border-radius: 100%;
 }
-.pr,
+.pr {
+	color: black;
+	font-weight: 600;
+	font-size: 24px;
+}
 .ch {
 	color: black;
 	font-weight: 550;
 	font-size: 17px;
+}
+.hc {
+	text-align: center;
+	font-size: 15px;
 }
 .storyDes {
 	text-align: justify;
@@ -101,6 +108,83 @@ ul li a.active {
 	color: white;
 	background-color: #0b7cac;
 }
+.full {
+	position: relative;
+	height: 400px;
+	width: 350px;
+	border: none !important;
+	outline: none !important;
+}
+.topic {
+	background-color: white;
+	width: 250px;
+	position: absolute;
+	border-left-width: 50%;
+	border-bottom-width: 50%;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	border-radius: 5px;
+}
+.topicImg {
+	background-color: #051643;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	transition: all 0.7s ease-out;
+	object-fit: contain;
+	position: relative;
+}
+.topicImg img {
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.topicBody {
+	margin-top: 5px;
+}
+.readMore {
+	font-weight: bold;
+	color: #051643;
+}
+
+.commentCard {
+	height: 200px;
+}
+.quoteDiv {
+	background-color: #ff9900;
+	margin-left: auto;
+	padding: 8px 8px;
+}
+.cmntTitle {
+	font-size: 20px;
+	color: #0b7cac;
+	font-weight: 600;
+}
+.button__left-right {
+	background: linear-gradient(to right, #051643 50%, #fff 50%);
+	background-size: 200% 100%;
+	background-position: bottom right;
+	transition: all 0.7s ease-out;
+}
+
+.button__left-right:hover {
+	background-position: bottom left;
+	color: #fff;
+}
+
+.button__left-right:hover .topicImg {
+	background-color: #0b7cac;
+}
+
+.button__left-right:hover .readMore {
+	color: #0b7cac;
+}
+
 .footer {
 	background-color: #f0f3f4;
 	padding-top: 40px;
@@ -202,6 +286,9 @@ ul li a.active {
 		width: 100% !important;
 		height: 400px !important;
 	}
+	.pr {
+		text-align: center;
+	}
 }
 @media all and (max-width: 380px) {
 	.navbar {
@@ -236,3 +323,14 @@ ul li a.active {
 }
 
 /* @media (orientation: landscape){} */
+
+.carousel {
+	margin-top: 50px;
+}
+.carousel-inner {
+	height: 100px;
+}
+.carousel-caption {
+	color: #051643;
+	top: 50%;
+}
