@@ -13,6 +13,55 @@ ul li a.active {
 	border-radius: 50rem;
 	margin-top: 5px;
 }
+.navTopLeft {
+	width: 75%;
+	transform: skew(-30deg);
+	margin-left: -5%;
+	background-color: #051643;
+	color: white;
+}
+.navSecLeft .logo{
+	margin-left: 60%;
+	height: 70px;
+	transition: 0.4s;
+}
+.navTopText {
+	transform: skew(30deg);
+	margin-left: 60%;
+}
+.navFix{
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+}
+
+.navTopRight {
+	width: 35%;
+	transform: skew(-30deg);
+	margin-right: -5%;
+	background-color: #ddd;
+}
+.navTopRightIcon {
+	transform: skew(30deg);
+}
+.navSecLeft {
+	width: 35%;
+	transform: skew(-30deg);
+	margin-left: -5%;
+	background-color: #051643;
+}
+.navSecLeftImg {
+	transform: skew(30deg);
+}
+.navSecRight {
+	width: 75%;
+	transform: skew(-30deg);
+	margin-right: -5%;
+	background-color: #ddd;
+}
+.navSecRightNav {
+	transform: skew(30deg);
+}
 .navC {
 	color: black !important;
 	font-weight: 600;
@@ -25,6 +74,13 @@ ul li a.active {
 	margin: auto;
 }
 .social {
+	color: #1e73be;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1;
+	padding: 0px 6px;
+}
+.socialN {
 	color: #1e73be;
 	font-size: 20px;
 	font-weight: 400;

@@ -24,54 +24,61 @@
 		/>
 		<title>Title</title>
 	</head>
+
 	<body>
-		<div class="d-flex container-fluid pt-2 address">
-			<div>Phone : +8801836998638 Email : kmexpressbd@gmail.com</div>
-			<div class="ml-auto">
-				<i class="fab fa-twitter social"></i>
-				<i class="fab fa-facebook social"></i>
-				<i class="fab fa-instagram social"></i>
+		<div class="d-flex">
+			<div class="navTopLeft">
+				<div class="d-flex p-2 align-items-center navTopText">
+					<i class="fas fa-phone-alt"></i> +8801836998638
+					<div class="b1" style="border-left: 2px solid white">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						kmexpressbd@gmail.com
+					</div>
+				</div>
+			</div>
+			<div class="navTopRight">
+				<div class="navTopRightIcon">
+					<div class="ml-auto p-2">
+						<i class="fab fa-twitter socialN"></i>
+						<i class="fab fa-facebook socialN"></i>
+						<i class="fab fa-instagram socialN"></i>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<nav
-			class="
-				navbar navbar-expand-md navbar-light
-				containerNav
-				d-flex
-				align-items-center
-			"
-		>
-			<a class="navbar-brand" href="index.html">
-				<img src="assets/img/logo-update.png" alt="" height="50px" />
-			</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#collapsibleNavId"
-				aria-controls="collapsibleNavId"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavId">
-				<ul class="navbar-nav ml-auto mt-2 pl-3 mt-lg-0">
-					<li class="nav-item btn">
-						<a class="nav-link navC" href="index.html">Home</a>
-					</li>
-					<div class="dropdown-divider"></div>
-					<li class="nav-item btn">
-						<a class="nav-link navC" href="products.html">Products</a>
-					</li>
-					<div class="dropdown-divider"></div>
-					<li class="nav-item btn">
-						<a class="nav-link navC" href="contactus.html">Contact Us</a>
-					</li>
-				</ul>
+		<div class="d-flex navFix">
+			<div class="navSecLeft">
+				<div class="p-2 navSecLeftImg">
+					<a href="index.html">
+						<img
+							src="assets/img/logo-update.png"
+							alt="kmcargobD"
+							height="60px"
+							style="margin-left: 60%"
+						/>
+					</a>
+				</div>
 			</div>
-		</nav>
+
+			<div class="navSecRight">
+				<div class="navSecRightNav">
+					<div class="p-2">
+						<ul class="d-flex align-items-center justify-content-around">
+							<li class="nav-item btn">
+								<a class="nav-link navC" href="index.html">Home</a>
+							</li>
+							<li class="nav-item btn">
+								<a class="nav-link navC" href="products.html">Products</a>
+							</li>
+							<li class="nav-item btn">
+								<a class="nav-link navC" href="contactus.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div id="carouselId" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -678,6 +685,8 @@
 				loop: true,
 				margin: 10,
 				nav: true,
+				autoplay: true,
+				autoplayTimeout: 2000,
 				responsive: {
 					0: {
 						items: 1,
@@ -690,9 +699,12 @@
 					},
 				},
 			});
-			// $(document).ready(function () {
-			// 	$(".owl-carousel").owlCarousel();
-			// });
+			$(".carousel").carousel({
+				interval: 2000,
+			});
 		</script>
+
+		
+		<script src="assets/js/navStyle.js"></script>
 	</body>
 </html>
